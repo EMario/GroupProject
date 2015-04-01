@@ -150,13 +150,13 @@ header {
 
 #two-columns #col1 {
 	float: right;
-	width: 640px;
+	width: 740px;
 	color: #000000;
 }
 
 #two-columns #col2 {
 	float: left;
-	width: 320px;
+	width: 220px;
 }
 
 #two-columns h3 {
@@ -166,7 +166,7 @@ header {
 .image-style{
 	/*width:320px;*/
 	/*height: 260px;*/
-	width: 240px;
+	width: 120px;
 }
 .clean{
 	clear: both;
