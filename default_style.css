@@ -141,6 +141,15 @@ header {
 #teammember h2{
 	margin: 20px 0;
 }
+
+#two-columns a{
+	font-weight:bold;
+}
+
+
+#two-columns a:hover{
+	text-decoration: underline;
+}
 #two-columns {
 	
 	padding: 30px 0px;
