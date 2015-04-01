@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>comp1950-protosite-quiz</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/quiz_style.css" type="text/css"/>
+
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/pepper-grinder/jquery-ui.css" media="screen" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-form.js"></script>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>Sample of quiz</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="../homepage.html" target="homepage">homepage</a></li>
+					<li><a href="template.html" target="templagte">templagte</a></li>
+				</ul>
+			</nav>
+
+			<div id="container">
+				<form action="" method="post" id="quizform">
+					<p>
+						<h3>1. What does the acronym XHTML stand for?(3 marks)<h3>
+						<input type="radio" name="num1" title="answer1"/>
+						eXtensible Hypertext Markup Language
+						<input type="radio" name="num1" title="answer2"/>
+						eXtensib Hyperte Markup Language
+						<input type="radio" name="num1" title="answer3"/>
+						eXtensible Hypertext Markup Langua
+					</p>
+
+					<p>
+						<h3>2. XHTML is meant to be “well formed”, which carries a series of strict rules for how to write code.
+
+						Briefly state three of these rules: (3 marks)</h3>
+						<textarea name="num2" id="num2" cols="30" rows="10"></textarea>
+					</p>
+
+					<p>
+						<h3>3. XHTML 1.0 has three approved DOCTYPEs. One is called Frameset. Chose other two.
+
+						(1 mark)</h3>
+						<input type="checkbox" name="num3" value="answer1" />
+						STRICT
+						<input type="checkbox" name="num3" value="answer2" />
+						FREE
+						<input type="checkbox" name="num3" value="answer3" />
+						UNKOWN
+						<input type="checkbox" name="num3" value="answer4" />
+						TRANSITIONAL
+					</p>
+
+					<p>
+						<h3>7. HTML5 will include rules for how browsers handle errors in the code. (1 mark)</h3>
+						<select name="num7" id="num7">
+							<option value="">--select--</option>
+							<option value="male">true</option>
+							<option value="female">fasle</option>
+						</select>
+					</p>
+
+					<p>
+						<h3>4. Write out the complete HTML5 DOCTYPE. (1 mark)</h3>
+						<textarea name="num4" id="num4" cols="30" rows="3"></textarea>
+					</p>
+
+					<p>
+						<h3>6. Which of the various Markup Languages is the current W3C recommendation? (1 mark)</h3>
+						<input type="radio" name="num6" title="answer1"/>HTML5
+						<input type="radio" name="num6" title="answer2"/>XHTML
+						<input type="radio" name="num6" title="answer2"/>DHTML
+						<input type="radio" name="num6" title="answer2"/>YHTML
+					</p>
+
+					<p>
+						<h3>5. HTML5 introduces a series of new semantic tags like &lt;header&gt; and &lt;footer&gt;. Choose other which are
+
+new semantic tags in HTML5. (2 marks)
+
+						</h3>
+						<input type="checkbox" name="num5" value="answer1" />
+						nav
+						<input type="checkbox" name="num5" value="answer2" />
+						aside
+						<input type="checkbox" name="num5" value="answer3" />
+						section
+						<input type="checkbox" name="num5" value="answer4" />
+						article
+						<input type="checkbox" name="num5" value="answer5" />
+						figure
+					</p>
+
+					<p>
+						<input type="button" name="submit" value="Submit" id="submitbutton" onClick="alert('Submitted.');"/>
+					</p>
+				</form>
+			</div>
+
+			<footer>
+				<p>
+					&copy; Copyright  by Group
+				</p>
+			</footer>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$("form").form();
+			});
+		</script>
+	</body>
+</html>
