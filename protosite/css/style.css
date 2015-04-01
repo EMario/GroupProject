@@ -34,17 +34,20 @@ border-top: 1px solid #ddd;
 nav{
 	font: 12px verdana, arial, helvetica, sans-serif;
 	text-align:center;
+	width: 1500px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 ul li{
-	width:250px;
+	width:375px;
 	display:inline-block;
 	color:#fff;
 	vertical-align:top;
 }
 
 ul a{
-	width:250px;
+	width:375px;
 	display:inline-block;
 	color:#fff;
 	vertical-align:top;
@@ -90,7 +93,7 @@ text-decoration: none;
 
 aside{
 	background: #ccc;
-	width:200px;
+	width:150px;
 	position:fixed;
 	top:200px;
 	left:20px;
@@ -103,9 +106,10 @@ aside ul li a{
 
 article{
 	background: #ccc;
-	width:75%;
+	width:1500px;
 	position:relative;
-	left:240px;
+	margin-left:auto;
+	margin-right:auto;
 	padding:15px;
 	margin-bottom:10px;
 	border: dotted 1px black;
