@@ -1,3 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 
+	background: #EFEFEF url("../../images/main-bg.jpg") repeat;
+	/*font-family: 'PT Sans','Microsoft YaHei', Arial, Helvetica, sans-serif;*/
+	font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	color: #000000;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	color: #221D1D;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+
+a {
+	text-decoration: none;
+	color: #091478;
+}
+
+/* header */
+
+/* container */
+#container
+{
+	margin:30px auto;
+	width:800px;
+	background-color:#eee;
+	padding:20px;	
+	border-radius: 5px;
+	clear: both;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }

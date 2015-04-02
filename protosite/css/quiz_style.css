@@ -1,7 +1,7 @@
 *
 {
 	font-size:12px;
-	font-family:verdana;
+	font-family:verdana,'Microsoft YaHei', Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -10,11 +10,21 @@ a{
 }
 h1
 {
-	font-size:2.5em;
+	font-size:3em;
 	text-align:center;
+	color: #091478;
+	font-family: "New Times Romans", serif;
+	text-shadow: 5px 5px 10px #00AABB;
+	font-style: italic;
 }
 
-body { background-color:#F9F9F9; }
+body { 
+	background:#F9F9F9 url("../../images/main-bg.jpg") repeat; 
+	font-size: 16px;
+	font-weight: 200;
+
+
+}
 
 input,textarea { padding:7px; font-size:14px !important; width:250px; }
 
@@ -54,7 +64,7 @@ nav ul li a:hover{
 	position: relative;
 	left: 1px;
 	top:1px;
-	background-color:#4285F4;
+	background-color:#00AABB;
 	color: #064C8A;
 }
 #container
