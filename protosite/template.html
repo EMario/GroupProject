@@ -5,16 +5,15 @@
 		<meta charset="utf-8" />
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link	rel="alternate stylesheet" title="Overhead Style" href="../Overhead.css" />
-	</head
+	</head>
 	<body>
 		<section>
 			<header>
 				<h1>british columbia institute of technology</h1>
 			</header>
 				<h2>comp 1950 | intermediate web design and development</h2>
-			<div class="menu-button">Menu</div>
-				<nav>
-					<ul class="flexnav" data-breakpoint="800">
+				<nav  id="primary_nav_wrap">
+					<ul>
 						<li><p href="#">Home</p>
 							<ul>
 								<li><a href="#">Home</a></li>
@@ -40,8 +39,9 @@
 					</ul>				
 				</nav>
 		</section>
-		<div id="h_align">
-			<aside>
+		<main data-sticky_parent>
+			<h2>Page Title</h2>
+			<aside id="sidenav" data-sticky_column>
 				<ol>
 					<li><a href="#">Part 1</a></li><!--
 					--><li><a href="#">Part 2</a></li><!--
@@ -49,9 +49,7 @@
 					--><li><a href="#">Part 4</a></li>
 				</ol>
 			</aside>
-		</div>
-		<main>
-			<h2>Page Title</h2>
+			<section data-sticky_column>
 				<article>
 					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 					<p>
@@ -181,6 +179,7 @@
 						tincidunt orci malesuada a. Ut luctus rhoncus ante iaculis maximus. Nam congue pretium velit commodo lacinia.
 					</p>
 				</article>
+			</section>
 			</main>
 			<footer>
 				<p>Sitemap</p>
@@ -206,7 +205,7 @@
 				<p><br />Copyright @ 2015 BCITCOMP 1950<br /><br /></p>
 			</footer>
 		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
-		<script type="text/javascript" src="js/jquery.flexnav.js"></script>
+		<script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
