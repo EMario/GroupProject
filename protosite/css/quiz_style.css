@@ -90,3 +90,11 @@ nav ul li a:hover{
 #container form h3{
 	margin-bottom: 10px;
 }
+
+footer{
+	height: 80px;
+	text-align: center;
+	font-size:.8em;
+	padding-top: 50px;
+	color:#007A88;
+}
