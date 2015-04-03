@@ -61,6 +61,8 @@ main{
 	top:150px;
 	position:relative;
 	z-index:-1;
+    width:1700px;
+    margin:0 auto;
 }
 
 aside{
@@ -252,7 +254,7 @@ section{
 }
 
 main section{
-      float:left;
+	
 	position:relative;
 	width:1300px;
 }
