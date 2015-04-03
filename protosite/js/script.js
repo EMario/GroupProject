@@ -1,5 +1,1 @@
-jQuery(document).ready(function($) {
-			
-			// initialize FlexNav
-			$(".flexnav").flexNav();
-		});
+$("#sidenav").stick_in_parent({offset_top: 20});
