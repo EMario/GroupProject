@@ -1,1 +1,3 @@
-$("#sidenav").stick_in_parent({offset_top: 20});
+  $(document).ready(function(){
+    $("#sidenav").sticky({topSpacing:150});
+  });

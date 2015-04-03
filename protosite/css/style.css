@@ -237,13 +237,22 @@ section{
 }
 
 #sidenav{
-	width:200px;
-	display:inline-block;
-	overflow:hidden;
+      background: #bada55;
+      color: white;
+      width: 150px;
+      font-family: Droid Sans;
+      font-size: 16px;
+      line-height: 1.6em;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.2);
+      border-radius: 10px;
+      float:right;
 }
 
 main section{
-	display:inline-block;
+      float:left;
 	position:relative;
-	width:1500px;
+	width:1300px;
 }
