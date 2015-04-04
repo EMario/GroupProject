@@ -1,3 +1,3 @@
   $(document).ready(function(){
-    $("#sidenav").sticky({topSpacing:150});
+    $("#sidenav").sticky({topSpacing:160});
   });

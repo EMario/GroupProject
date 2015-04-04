@@ -7,7 +7,7 @@
 header {
 	margin-top: 0;
 	padding: 53px 35px 17px 68px;
-	background: url(../images/background_top.jpg) no-repeat #507f36;
+	background: url(../images/background_top_blue.jpg) no-repeat #287cb6;
 }
 
 header h1 {
@@ -33,7 +33,7 @@ border-top: 1px solid #ddd;
 nav{
 	font: 12px verdana, arial, helvetica, sans-serif;
 	text-align:center;
-	width: 1500px;
+	width: 1700px;
 	margin-left:auto;
 	margin-right:auto;
 	  vertical-align: baseline;
@@ -43,56 +43,47 @@ nav{
 h3{
 	margin-bottom:10px;
 	text-decoration: underline;
+	background-color:#777;
+	width:1510px;
+	padding:10px;
+	display:block;
+	border: dotted 1px black;
+	line-height:20px;
+	border-radius:20px;
 }
 
 main h2{
-	width: 1500px;
+	width: 1650px;
 	margin-left:auto;
 	margin-right:auto;
 	border-radius:20px;
 	margin-bottom:10px;
-	background: url(../images/background_head.jpg) no-repeat #507f36;
+	background: url(../images/background_head_blue.jpg) no-repeat #287cb6;
 	font-size:16px;
+	padding-left:10px;
 }
 
 main{
 	vertical-align:baseline;
 	overflow: hidden;
-	top:150px;
+	top:160px;
 	position:relative;
 	z-index:-1;
-    width:1700px;
+    width:1680px;
     margin:0 auto;
-}
-
-aside{
-	width:1420px;
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	background: #ddd;
-	padding:10px 50px 10px 50px;
-	border-radius:20px;
-	margin-bottom:10px;
-	border: solid 1px black;
-}
-
-aside ul{
-	position:relative;
-	left:40px;
 }
 
 #primary_nav_wrap
 {
 	color:#fff;
 	font-size:16px;
+	margin-top:5px;
 }
 
 #primary_nav_wrap ul
 {
 	list-style:none;
 	position:relative;
-
 	margin:0;
 	padding:0
 }
@@ -119,8 +110,9 @@ aside ul{
 	display:inline-block;
 	margin:0;
 	padding:0;
-	width:500px;
+	width:558px;
 	background-color:#777777;
+	border: solid 1px black;
 }
 
 #primary_nav_wrap ul li.current-menu-item
@@ -152,7 +144,7 @@ aside ul{
 #primary_nav_wrap ul ul a
 {
 	line-height:120%;
-	width:500px;
+	width:558px;
 	padding-top:10px;
 	padding-bottom:10px;
 	color:#ee6600;
@@ -195,6 +187,7 @@ footer{
 	background: #343434;
 	text-align:center;
 	padding:25px;
+	margin-top:10px;
 }
 
 footer p a {
@@ -239,11 +232,12 @@ section{
 }
 
 #sidenav{
-      background: #bada55;
+      background: #ddd;
       color: white;
-      width: 150px;
+      width: 110px;
+	  border: dotted 1px black;
       font-family: Droid Sans;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.6em;
       font-weight: bold;
       text-align: center;
@@ -253,8 +247,13 @@ section{
       float:right;
 }
 
+#sidenav ul li a{
+	color:#ee6600;
+	display:block;
+}
+
 main section{
 	
 	position:relative;
-	width:1300px;
+	width:1280px;
 }
