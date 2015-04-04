@@ -1,4 +1,4 @@
-head, nav, section, aside, #h_align, #menu-button, #flexnav{
+head, nav{
 		display: none;
 	}
 	
@@ -7,6 +7,7 @@ main, article{
 	height:auto;
 	margin-left:auto;
 	margin-right:auto;
+
 
 }
 
@@ -17,8 +18,9 @@ main h2 {
 	margin-top:0px;
 	border-radius:20px;
 	margin-bottom:10px;
-	background: url(../images/background_head.jpg) no-repeat #507f36;
+	background: url(../images/background_head.jpg) no-repeat #777;
 	font-size:22px;
+
 }
 
 p{
