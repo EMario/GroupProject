@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>COMP 1950 Template</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link	rel="alternate stylesheet" title="Overhead Style" href="../Overhead.css" />
+	</head>
+	<body>
+		<section>
+			<header>
+				<p>british columbia institute of technology</p>
+			</header>
+				<p id="course">comp 1950 | intermediate web design and development</p>
+				<nav  id="primary_nav_wrap">
+					<ul>
+						<li><p href="#">Home</p>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Resources</a></li>
+								<li><a href="#">About</a></li>
+							</ul>
+						</li><!--
+						--><li><p>Lectures</p>
+							<ul>
+								<li><a href="#">Lecture 1</a></li>
+								<li><a href="#">Lecture 2</a></li>
+								<li><a href="#">Lecture 3</a></li>
+								<li><a href="#">Lecture 4</a></li>	
+							</ul>
+						</li><!--
+						--><li><p>Associated</p>
+							<ul>
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+							</ul>
+						</li>
+					</ul>				
+				</nav>
+		</section>
+		<main>
+			<aside>
+				<ul>
+					<li><a href="#T1">Styling For Printers</a></li><!--
+					--><li><a href="#T2">CSS Positioning</a></li><!--
+					--><li><a href="#T3">Excercise</a></li><!--
+					--><li><a href="#T4">Template Development - Introduction</a></li><!--
+					--><li><a href="#T5">Quisque egestas</a></li><!--
+					--><li><a href="#T6">HTML Created</a></li>
+				</ul>
+			</aside>
+			<section>
+				<span class="anchor"id="top"></span>
+				<h1>Lecture Example</h1>
+				<span class="anchor"id="T1"></span>
+				<h2>Styling For Printers</h2><span class="back_top"><a href="#top">back to the top</a></span>
+				<article>
+					<p>
+					<p>When linking to your CSS, using <code>media="print"</code> will allow printer friendly styles to be applied. If you wanted the printer styles to inherit your default styles, use <code>media="all"</code> with the default stylesheets :</p><code>&lt;link rel="stylesheet" href="default_styles.css" media="all" /><br />&lt;link rel="stylesheet" href="print_styles.css" media="print" /></code></p>
+					<p>To ensure your default styles wont also be applied to the printer (usually the best option), add <code>media="screen"</code> to the any stylesheets that are not to be used when printing:</p><code>&lt;link rel="stylesheet" href="default_styles.css" media="screen" /><br />&lt;link rel="stylesheet" href="print_styles.css" media="print" /></code></p>
+					<p>The key to a stylesheet specifically for printing is a matter of <em>planning</em> more than anything.</p>
+
+					<p>You'll need a few things prepared before you can begin:</p>
+					<ul>
+						<li>A layout that is separated by <code>div</code>s, or if using HTML5, semantic tags (<code>header</code>, <code>nav</code>, etc) are also used to separate page content</li>
+						<li>Semantic markup including several summary headings</li>
+						<li>Knowing what areas you want printed and what you don't</li>
+						<li>Organized content so that printable areas are not nested in non-printable ones</li>
+						<li>A recognition of why users will print pages. Generally, a website is printed because the user requires a hard copy of the site information, and not because of the visually pleasing way in which that information is presented. Thus print styles should focus on presenting critical information (eg: most page textual content, images crucial to page content) and either hide or reduce less useful content (eg: navigation bars, background images, light/subtle colour schemes)</li>
+					</ul>
+
+					<p>How to build your page. Make sure you have separate <code>div</code> elements for:</p>
+					<ul>
+						<li>each content section you want printed</li>
+						<li>page elements that represent titles or headers</li>
+						<li>other printable elements (footers)</li>
+						<li>non-printing elements (navigation/sidebars/header images/backgrounds)</li>
+					</ul>
+
+					<p>Once you have planned your layout and created distinct elements, the next steps are to:</p>
+					<ol>
+						<li>Hide the elements you don't want the printer to see</li>
+						<li>Re-style the layout</li>
+						<li>Re-style the visuals </li>
+						<li>Add textual hyperlink data to <code>&lt;a&gt;</code>nchor elements</li>
+					</ol>
+
+					</p>
+				</article>
+				<span class="anchor"id="T2"></span>
+				<h2>CSS Positioning</h2><span class="back_top"><a href="#top">back to the top</a></span>
+				<article>
+					<p>
+						<div class="contblock">
+
+						<p>Building proper CSS-based layouts requires an understanding of how positioning works, which is based largely on the Box Model concept. A lot has been written about the fabled Box Model and it's lack of support in certain browsers (eg: <a href="http://tantek.com/CSS/Examples/boxmodelhack.html">Internet Explorer 5.5 Box model hack.</a>)</p>
+
+						<h3>Box model basics:</h3>
+						<img src="images/box_model.gif" alt="CSS Box Model" />
+						<ul>
+							<li>All elements are built around the concept of a box</li>
+							<li>Every element is contained in a Box of some sort or another</li>
+							<li>Each element has a content core, surrounded by optional padding, borders, margins</li>
+							<li>These are the 'building blocks' of a CSS layout, with both inline and block-level elements having these properties</li>
+							<li><strong>Width</strong> refers to left inner edge to the right inner edge</li>
+							<li><strong>Height</strong>  refers to the top inner edge to the bottom inner edge</li>
+							<li>This can cause problems if elements are near one another with considerable padding or margins</li>
+							<li>Paddings and borders add to the dimensions of the box model.</li>
+							<li>Additionally, margins will collapse vertically, but not horizontally.  This can lead to some confusion when trying to build out a well-positioned page</li>
+						</ul>
+
+						<p>In the following example:</p>
+
+						<pre><code>
+		&lt;body&gt;
+			&lt;div&gt;
+				&lt;p&gt;This is some text&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/body&gt;
+						</code></pre>
+
+						<ul>
+							<li>The &lt;p&gt; block is contained within the &lt;div&gt; block, which is, in turn, contained inside the &lt;body&gt; block.  </li>
+							<li>This is crucial for visual layout, as this will determine how your layout looks.</li>
+							<li>Inline blocks are not as crucial, as they will flow alongside other elements and have little impact on layout.</li>
+							<li>Inline tags are always as wide and tall as they need to be to contain their data. They will not respond to <code>width</code> and <code>height</code>. If you need to size an inline tag, use <code>display:block;</code></li>
+						</ul>
+
+						<p>In order to have some control over how these boxes are placed, block boxes (like <code>div</code> or <code>p</code> or <code>h1</code>) act as <strong>containing blocks</strong> to the content and blocks inside.</p>
+
+						<p>Containing blocks are used to determine the position and dimensions of the elements within it.</p>
+
+						<pre><code>
+		&lt;div id="main"&gt;
+			&lt;p style="width:25%;"&gt;
+				This paragraph will be 25% the width of the parent div,
+				not 25% of the page
+			&lt;/p&gt;
+		&lt;/div&gt;</code></pre>
+			<p><br />Download and walk through some <a href="/comp1950/downloads/css_box_model.zip">box model code examples</a> to get a better understanding.</p>
+
+			<h3>Positioning Details</h3>
+			<ul>
+				<li><strong>Static Flow</strong> - the default. elements that 'flow' from left to right.  Static flow is the default scheme with block elements flowing from the top downwards.  Inline elements flow left to right</li>
+				<li><strong>Static Flow</strong> also sees your vertical margins collapsing.  Only the larger of the two margins are used when calculating distance between the two.
+				</li><li><strong>Non-replaced element</strong> - these elements are actually contained inside the document. The content of non-replaced elements may be stylerd with CSS<ul><li><em>Example:</em> a paragraph of text.</li></ul>
+</li>
+
+				<li><strong>Replaced element</strong> - these are not actually contained in the document, but are linked to. The content of replaced elements is not considered in the CSS rendering model.<ul><li><em>Example:</em> <code>&lt;img&gt;</code> or <code>&lt;input&gt;</code></li></ul></li>
+
+			</ul>
+
+			<h3>Floating and Positioning</h3>
+			<ul>
+				<li>In order to have your content show in an appropriate location, you may need to either float or position your containers.</li>
+				<li><strong>Positioning</strong> is fairly strightforward and has been around for a long time.</li>
+				<li>Declare exactly where an element box will appear compared to where it would normally be</li>
+				<li><strong>4 kinds:</strong>
+				<ul><li><strong>Static:</strong> Generated as normal</li>
+				<li><strong>Relative:</strong> The box is offset by some distance</li>
+				<li><strong>Absolute:</strong> The box is no longer part of the flow of the document and is placed with respect to its containing block.</li>
+				<li><strong>Fixed:</strong> Similar to absolute, but it is attached to a specific location</li></ul>
+				</li>
+				<li><strong>Floating </strong>was introduced in CSS1 and gives rise to a lot of difficulties for many users.</li>
+				<li>Similar to <code>&lt;img src="img.gif" align="right"&gt;</code> which 'floats' the image to the right of the content.</li>
+				<li>Other content will float around floated elements.</li>
+				<li>Consecutive floats (with similar alignment like <code>right</code> or <code>left</code>) will attempt to float using the same top-line, but will collapse to another line if space does not permit</li>
+			<li>Consecutive <code>right</code> floats will appear in reverse order on the final render</li>
+				<li>Other floated areas can create some interesting effects if DIVs are not floated correctly</li>
+				<li>Backgrounds can cause havoc with floated elements, as much of the time, you will see the background coming through</li>
+				<li>To make sure elements don't fall into a floated element, you can use <code>clear: left | right | both;</code></li>
+			</ul>
+			<p></p>
+
+			<p>Walk through some <a href="/comp1950/downloads/css_positioning.zip">css positioning code examples</a> to get a better understanding.</p>
+					</p>
+				</article>
+				<span class="anchor"id="T3"></span>
+				<h2>Excercise</h2><span class="back_top"><a href="#top">back to the top</a></span>
+				<article>
+					<ul class="only-list">
+						<li>imlement a popular fixed width page layout that matches the basic behavior of <a href="layout_exercise_sample/">this example layout</a>. don't spoil the exercise by copying the code from the example, use it to determine the desired structure and behavior</li>
+						<li><a href="/comp1950/downloads/layout_exercise.zip">download the starting files</a>	</li>
+						<li>be sure to implement the following features<ul>
+							<li>the header and footer should be as wide as the browser</li>
+							<li>the navigation and the main section for content should be fixed width centered</li>
+							<li>the navigation links should be in an HTML unordered list, displaying horizontally and styled with css. you don't need to match the exact design of the example, but try to make an appealingly styled navigation. maybe use one of the <a href="http://css.maxdesign.com.au/listamatic/">list navigation examples</a></li>
+							<li>the social media icons should NOT be used individually. use the online <a href="http://csssprites.com/">sprite genrator</a> to build a single sprite image, and use that</li>
+							<li>the social media icons should include a hover effect (change the border)</li>
+
+						</ul></li>
+						<li>some of the colors used in the example:<ul>
+							<li>header/footer background - <span style="background-color:#450716;color:white;">#450716</span>
+							<li>header/footer borders: <span style="background-color:#AD6376;color:white;">#AD6376</span></li>
+							<li>main content area, yellow highlights, hover effects: <span style="background-color:#FFE47C;">#FFE47C</span></li></li>
+							<li>foreground text <span style="background-color:#444444;color:white;">#444444</span></li></li>
+						</ul></li>
+						<li>use a <a href="http://www.lipsum.com/">lorum ipsum generator</a> to create generic page content</li>
+							<li>a sample solution will be available for download here later today</li>
+						<li><a href="/comp1950/downloads/layout_exercise_solution.zip">download a sample solution</a>	</li>
+					</ul>
+				</article>
+				<span class="anchor"id="T4"></span>
+				<h2>Template Development - Introduction</h2><span class="back_top"><a href="#top">back to the top</a></span>
+				<article>
+						<ul class="only-list">
+							<li>A common type of work done today: customizing templates or writing them from scratch</li>
+							<li>All levels: 
+									<ul>
+											<li><strong>Server side admins</strong> enable applications</li>
+											<li><strong>Programmers</strong> connect logic and data to front end code</li>
+											<li><strong>Client side scripters</strong> work with provided content for element manipulation</li>
+											<li><strong>Client side coders</strong> create the HTML and CSS to present the information</li>
+									</ul></li>
+							
+							<li>Many different languages and tools for developing templates</li>
+							<li>One common principle: inserting content into HTML</li>
+							<li>The primary (and nearly overwhelming use) of any template is for any type of <strong>Content Management System</strong> (CMS)</li>
+							<li>The simplest and most well known: a Blog</li>
+						</ul>
+				</article>
+				<span class="anchor"id="T5"></span>
+				<h2>Quisque egestas</h2><span class="back_top"><a href="#top">back to the top</a></span>
+				<article>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque, neque vestibulum volutpat eleifend, sem turpis luctus nunc, iaculis euismod sem sem at turpis. Donec mattis ipsum sit amet nunc suscipit, sit amet viverra sem blandit. Curabitur sit amet euismod felis. In dolor ante, faucibus vitae blandit eget, ullamcorper at neque. Maecenas pellentesque ullamcorper lorem, id maximus diam interdum laoreet. Aliquam erat volutpat. <strong>Nulla varius ac nunc vitae mollis. Fusce consequat sollicitudin nibh, at consectetur leo imperdiet sed. Fusce sit amet ante lacinia, faucibus sem non, tempus magna. Cras mauris magna, suscipit in metus sit amet, molestie hendrerit libero. Maecenas mauris quam, maximus pretium blandit aliquet, sagittis sed magna. Sed maximus vestibulum est, id tincidunt nulla suscipit eleifend. Etiam vehicula augue ac enim dictum molestie.</strong>
+					</p>
+					
+					<ul>
+						<li>Integer tempus fringilla fermentum.</li>
+						<li>Pellentesque ac commodo erat.</li>
+						<li>Vivamus felis sapien, mattis nec viverra sed, pulvinar vel elit.</li>
+						<li>Suspendisse potenti. Nulla ac odio pellentesque, finibus eros nec, hendrerit magna.</li>
+						<li>Proin fermentum vestibulum urna ut euismod.</li>
+						<li>In sit amet risus consectetur, dictum purus id, tempus ligula.</li>
+					</ul>
+					<p>
+						Proin enim diam, scelerisque tincidunt augue ac, euismod eleifend odio. Sed commodo erat at egestas euismod. Nunc metus nisi, finibus gravida viverra a, blandit in risus. Curabitur eget aliquam dui. Curabitur nec posuere quam. Morbi vitae metus bibendum, ornare dui convallis, suscipit purus. Cras quis justo ornare ex ultricies egestas sit amet non ipsum. Donec vel congue ante, nec vestibulum orci. <a href="#">Aenean venenatis dui orci, at sodales mi fermentum nec.</a> Phasellus libero sem, rutrum et scelerisque ut, tincidunt nec risus. Nunc aliquet ante id magna dapibus tempor. Etiam fermentum ut diam nec posuere. Phasellus vitae orci rutrum, laoreet lectus et, sodales augue.
+
+						Quisque commodo, mauris a vehicula porta, lorem eros accumsan quam, nec aliquam augue metus vitae augue. Vivamus lacinia, ligula in scelerisque feugiat, neque augue vulputate lectus, accumsan laoreet velit dui non est. Lorem ipsum dolor sit amet, <code>consectetur adipiscing elit.</code> Donec eget quam lacus. Cras non semper eros. Nullam euismod eros vel est tincidunt vulputate id nec nibh. Cras ac feugiat turpis.
+					</p>
+					<ul>
+						<li>Nunc vel suscipit sapien. Fusce viverra, ligula sit amet egestas hendrerit, eros ante euismod lorem, nec aliquet felis nisi quis neque. Phasellus suscipit est quam, non sollicitudin nibh hendrerit convallis. Quisque egestas at elit et tempor.</li> 
+						<li>Quisque vel sodales nulla. Nulla consequat vitae nulla id pretium. Duis ullamcorper, nisi eget lacinia hendrerit, tortor ex feugiat mauris, a semper risus velit ut velit. Proin ultrices nunc sit amet neque porttitor, id rhoncus magna tincidunt. Nulla facilisi.</li> 
+						<li>Ut gravida, nisl ut tempor bibendum, enim arcu viverra dolor, a convallis ipsum lacus at dui. Morbi lobortis dolor eget fermentum mattis.</li>
+					</ul>
+				</article>
+				<span class="anchor"id="T6"></span>
+				<h2>HTML Created</h2><span class="back_top"><a href="#top">back to the top</a></span>
+				<article>
+						<ul>
+							<li>Late 1991, Tim Berners-Lee releases the first iteration of what would become HTML 2.0 (there was no real 1.0+)</li>
+							<li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
+							<li>Over the next decade, various additions, improvements and changes are introduced</li>
+							<li>The last official specification was the service release of HTML 4.01 in December 1999</li>
+							<li>Initially used for documents and a place for the technically inclined, the web did not have the international pervasiveness it does today</li>
+							<li>Most developers were new to the language and there were no real classes in it</li>
+							<li>People had to learn as they went along</li>
+							<li>A lot of early sites are poorly designed</li>
+
+						</ul>
+									<h4>HTML 4.01 template</h4>
+						<textarea style="width:90%;height:170px;" rows="10" cols="50">
+		&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+			"http://www.w3.org/TR/html4/loose.dtd"&gt;
+				&lt;html&gt;
+					&lt;head&gt;
+						&lt;title&gt;&lt;/title&gt;
+							lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+					&lt;/head&gt;
+					&lt;body&gt;
+					&lt;/body&gt;
+				&lt;/html&gt;
+					</textarea>
+				</article>
+			</section>
+			</main>
+			<footer>
+				<p>Sitemap</p>
+				<ul>
+					<li><p>Article 1</p></li><!--
+					--><li><a href="#">Home</a></li><!--
+					--><li><a href="#">Reources</a></li><!--
+					--><li><a href="#">About</a></li>
+				</ul>
+				<ul>
+					<li><p>Lectures</p></li><!--
+					--><li><a href="#">Lecture 1</a></li><!--
+					--><li><a href="#">Lecture 2</a></li><!--
+					--><li><a href="#">Lecture 3</a></li>
+				</ul>
+				<ul>
+					<li><p>Associated</p></li><!--
+					--><li><a href="#">Article 2</a></li><!--
+					--><li><a href="#">Article 3</a></li><!--
+					--><li><a href="#">Article 4</a></li>
+				</ul>
+				<p><br />Contact: <a href="#">Jeffrey Parker</a></p>
+				<p><br />Copyright @ 2015 BCITCOMP 1950<br /><br /></p>
+			</footer>
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="js/jquery.sticky.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
