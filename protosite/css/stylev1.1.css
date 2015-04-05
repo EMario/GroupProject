@@ -135,29 +135,48 @@ section:first-of-type{
 main section{
 	display:inline-block;
 	position:relative;
-	width:80%;
+	width:79%;
 	min-width:893px;
 	vertical-align:top;
 }
 
 aside{
 	vertical-align:top;
-		position:relative;
-		display:inline-block;
-      background: #ddd;
-      color: white;
-      width: 7%;
+	position:relative;
+	display:inline-block;
+    width: 10.5%;
 	min-width:65px;
-	  border: dotted 1px black;
-      font-family: Droid Sans;
-      font-size: 14px;
-      line-height: 1.6em;
-      font-weight: bold;
-      text-align: center;
-      padding: 10px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.2);
-      border-radius: 10px;
-	  margin:0 0 10px 20px;
+}
+
+aside h3{
+	border: dotted 1px black;
+    font-family: Droid Sans;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #777;
+    color: black;
+	width:83%;
+	margin-bottom:5px;
+
+}
+
+aside ul{
+	border: dotted 1px black;
+    font-family: Droid Sans;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ddd;
+    color: white;
+	width:83%;
+	margin-bottom:10px;
 }
 
 aside ul li a{
@@ -379,6 +398,34 @@ border-top: 1px solid #ddd;
 }
 
 @media only screen and (max-width: 1024px){ 
+		#primary_nav_wrap ul li
+{
+	width:100%;
+}
+
+	#primary_nav_wrap ul li:first-child{
+		z-index:6;
+	}
+#primary_nav_wrap ul li:nth-child(2){
+		z-index:5;
+	}
+#primary_nav_wrap ul li:last-child{
+		z-index:4;
+	}
+
+	#header_section{
+	top:213px;
+	}
+	main{
+	top:242px;
+	}
+	footer{
+	top:232px;
+	}
 	
+	.anchor{
+  height: 242px; 
+  margin-top: -242px; 
+}
 
 }

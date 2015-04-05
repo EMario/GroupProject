@@ -97,29 +97,49 @@ main{
 main section{
 	display:inline-block;
 	position:relative;
-	width:80%;
+	width:79%;
 	min-width:893px;
 	vertical-align:top;
+	margin-left:15px;
 }
 
 aside{
 	vertical-align:top;
-		position:relative;
-		display:inline-block;
-      background: #ddd;
-      color: white;
-      width: 7%;
+	position:relative;
+	display:inline-block;
+    width: 9.5%;
 	min-width:65px;
-	  border: dotted 1px black;
-      font-family: Droid Sans;
-      font-size: 14px;
-      line-height: 1.6em;
-      font-weight: bold;
-      text-align: center;
-      padding: 10px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.2);
-      border-radius: 10px;
-	  margin:0 0 10px 20px;
+}
+
+aside h3{
+	border: dotted 1px black;
+    font-family: Droid Sans;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #777;
+    color: black;
+	width:85%;
+	margin-bottom:5px;
+
+}
+
+aside ul{
+	border: dotted 1px black;
+    font-family: Droid Sans;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ddd;
+    color: white;
+	width:85%;
+	margin-bottom:10px;
 }
 
 aside ul li a{
@@ -406,4 +426,9 @@ border-top: 1px solid #ddd;
 	footer{
 	top:142px;
 	}
+	
+	.anchor{
+  height: 152px; 
+  margin-top: -152px; 
+}
 }
