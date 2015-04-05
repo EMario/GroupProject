@@ -25,16 +25,16 @@ nav{
 	  vertical-align: baseline;
 	 background-color:#ddd;
 	z-index:2;
+	min-width:1024px;
 }
 
 h2{
 	position:relative;
-	margin:0 auto 3px auto;
+	margin-bottom:3px;
 	text-decoration: underline;
 	background-color:#777;
-	width:83%;
-	min-width:720px;
-	padding:10px;
+	width:86%;
+	padding:10px 0 10px 0;
 	display:inline-block;
 	border: dotted 1px black;
 	line-height:20px;
@@ -48,7 +48,6 @@ h1{
 	font: bold 10px verdana, arial, helvetica, sans-serif;
 	color: #fff;
 	width: 94%;
-	min-width:837px;
 	margin:0 auto 10px auto;
 	border-radius:20px;
 	background: url(../images/background_head_blue.jpg) no-repeat #287cb6;
@@ -70,7 +69,6 @@ main{
 article{
 	background: #ddd;
 	width:92%;
-	min-width:817px;
 	position:relative;
 	margin-left:auto;
 	margin-right:auto;
@@ -137,8 +135,8 @@ section:first-of-type{
 main section{
 	display:inline-block;
 	position:relative;
-	width:85%;
-	min-width:870px;
+	width:80%;
+	min-width:893px;
 	vertical-align:top;
 }
 
@@ -148,8 +146,8 @@ aside{
 		display:inline-block;
       background: #ddd;
       color: white;
-      width: 10%;
-	min-width:102px;
+      width: 7%;
+	min-width:65px;
 	  border: dotted 1px black;
       font-family: Droid Sans;
       font-size: 14px;
@@ -335,6 +333,11 @@ border-top: 1px solid #ddd;
 {
 	display:block
 }
+
+#comment{
+	background:lightblue;
+	margin-top:5px;
+}
 	
 .menu-button{
 	display:none;
@@ -355,16 +358,22 @@ border-top: 1px solid #ddd;
 
 .back_top{
 	background-color:#777;
-	padding:10px;
+	padding:10px 0 10px 0;
 	display:inline-block;
 	border: dotted 1px black;
 	line-height:20px;
 	border-radius:10px;
 	font-size:15px;
 	color:#fff;
-	width:10%;
-	min-width:100px;
+	width:12.5%;
 	display:inline-block;
-	margin-left:3px;
+	margin-left:5px;
 }
-	
+
+.subhead{
+	width: 96%;
+	display:block;
+	margin:0 auto 0 auto;
+	text-align:center;
+	padding:0px;
+}
