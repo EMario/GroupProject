@@ -34,6 +34,11 @@ h1{
 	width:92%;
 }
 
+#header_section{
+	top:0px;
+}
+
+
 main h2 {
 	width:97%;
 	margin-left:auto;
@@ -47,7 +52,8 @@ main h2 {
 }
 
 main{
-	margin-top:-150px;
+	/*margin-top:-150px;*/
+	top: 5px;
 }
 
 p{
@@ -72,7 +78,8 @@ p{
 
 
 footer {
-	top:150px;
+	/*top:150px;*/
+	top:0px;
 	width:90%;
 	margin-left:auto;
 	margin-right:auto;
