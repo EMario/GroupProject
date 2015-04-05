@@ -353,3 +353,8 @@ footer p {
 	background: url("images/list-icon.jpg")  left center no-repeat;
 	padding-left: 15px;
 }
+
+.entry a:hover{
+	font-style: italic;
+	text-decoration: underline;
+}
