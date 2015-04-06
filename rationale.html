@@ -9,6 +9,9 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 		<link rel="stylesheet" href="default_style.css" type="text/css"/>
+		<script src="protosite/js/jquery-1.11.2.js"></script>
+		<script src="protosite/js/jquery.corner.js"></script>
+		
 	</head>
 
 	<body>
@@ -24,15 +27,15 @@
 			<nav id="menu">
 				<ul>
 					<li>
-						<a href="homepage.html">Home</a>
+						<a href="homepage.html" target="homepage">Home</a>
 					</li>
 					<li>
-						<a href="protosite/template.html">Protosite</a>
+						<a href="protosite/homepage.html" target="protosite">Protosite</a>
 					</li>
 					<li>
-						<a href="sitemap.html">sitemap</a>
+						<a href="sitemap.html" target="sitemap">sitemap</a>
 					</li>
-					<li class="current_page_item" 
+					<li class="current_page_item"
 					class="last">
 						<a href="#">Rationale</a>
 					</li>
@@ -48,35 +51,76 @@
 							Here we will list all the features and specifications implemented on the site as well as the function planned, but that could not be implemented. We will also justify our decisions for choosing the layout and design.
 						</p>
 						<br  />
-			
-					<h3>Implemented features:</h3>
-					<ul>
-						<li>Overhead style to show on the projector - optimized to prioritize the content</li>
-						<li>Iterative Sitemap - easy access with a clickable diagrama.   </li>
-						<li>Third...</li>
-					
-					</ul>
-					
-					
-					
+						<h2>Implemented features:</h2>
+						<h3><a href="homepage.html">About Homepage</a></h3>
+						<ul class="corner">
+							<li>
+								We use responsive design model, the page has two styles controlled by whether the screen size smaller than 1024px
+							</li>
+							<li>
+								We design simple but elegant appearance
+							</li>
+							<li>
+								we show our team-members' beautiful photoes to make the page more lively
+							</li>
+						</ul>
+						<h3><a href="protosite/homepage.html">About Protosite</a></h3>
+						<ul class="corner">
+							<li>
+								<a href="protosite/homepage.html">protosite homepage page</a> has menu which use the jquery to show the detail nav
+							</li>
+							<li>
+								<a href="protosite/lecture.html"> lecture page</a> has menu which use the jquery to show the detail nav
+							</li>
+
+							<li>
+								<a href="protosite/quiz.html">quiz page</a> is implemented with jquery form ui plugin, which has beautiful apperance and powful validation function.
+								There is full with css3 and html5 technology with this page, like box-shadow, border-radius, test-shadow, etc
+							</li>
+							<li>
+								<a href="protosite/resources.html">resources page</a> is desinged to have special looks not just simple list the resources links, this page aslo have two styles for the responsive designed model
+							</li>
+
+						</ul>
+						<h3><a href="#">About rationale</a></h3>
+						<ul class="corner">
+							<li> using jquery corner plugin to  it adds magic effects to the "list paragraph" to show a blue background and "bite" corner </li>
+						</ul>
+						<h3>Others</h3>
+						<ul class="corner">
+							<li>
+								Overhead style to show on the projector - optimized to prioritize the content
+							</li>
+							<li>
+								Iterative Sitemap - easy access with a clickable diagrama.
+							</li>
+							<li>
+								Third...
+							</li>
+
+						</ul>
+
 					</div>
 				</div>
-			
-						
-						<div class="clean"></div>
-					</div>
 
-						<div class="clean"></div>
-					</div>
-					
-				</div>
-			</section>
-
-			<footer>
-				<p>
-					&copy; Copyright  by Group
-				</p>
-			</footer>
+				<div class="clean"></div>
 		</div>
+
+		<div class="clean"></div>
+		</div>
+
+		</div>
+		</section>
+
+		<footer>
+			<p>
+				&copy; Copyright  by Group
+			</p>
+		</footer>
+		</div>
+		<script>
+			//corner
+			$( '.corner' ).corner( "bite 15px" );
+		</script>
 	</body>
 </html>

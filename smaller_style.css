@@ -6,9 +6,8 @@
 body {
 
 	background: #EFEFEF url("images/main-bg.jpg") repeat;
-	/*font-family: 'PT Sans','Microsoft YaHei', Arial, Helvetica, sans-serif;*/
 	font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 200;
 	color: #000000;
 }
@@ -21,21 +20,21 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 h2 {
-	font-size: 2.4em;
+	font-size: 2em;
 }
 
 h3 {
-	font-size: 1.6em;
+	font-size: 1.2em;
 }
 
 p, ul, ol {
 	margin-top: 0;
 	line-height: 180%;
-	list-style-type: none;
+	font-size:1em;
 }
 
 
@@ -48,9 +47,12 @@ a {
 /* Header */
 
 header {
-	width: 940px;
 	height: 150px;
-	margin: 0 auto;
+	/*margin: 0 auto;
+	overflow: hidden;*/
+	width: 60%;
+	float: left;
+	
 }
 
 
@@ -199,6 +201,8 @@ a:visited:before {
 #logo {
 	margin: 0px auto 30px auto;
 	letter-spacing: -1px;
+	/*float: left;*/
+	/*padding-left: 5%;*/
 }
 
 
@@ -206,7 +210,10 @@ a:visited:before {
 	line-height: 100px;
 	text-align: center;
 	text-transform: lowercase;
-	font-size: 3.8em;
+	font-size: 2.8em;
+	
+	
+	line-height: 80px;
 }
 
 #logo p {
@@ -218,13 +225,14 @@ a:visited:before {
 
 #menu {
 	overflow: hidden;
-	width: 1000px;
-	padding: 0px 0px;
-	margin: 0px auto 30px auto;
-	background: #064C8A;
-	border-radius: 20px 0px 20px 0px;
+	/*width: 1000px;*/
+	/*margin: 0px auto 30px auto;*/
+	/*background: #064C8A;*/
+	/*border-radius: 20px 0px 20px 0px;*/
 	font-size: 1.2em;
 	color: #000000;
+	margin-top: 30px;
+	padding-right: 5%;
 }
 
 #menu ul {
@@ -232,31 +240,45 @@ a:visited:before {
 	list-style: none;
 	line-height: normal;
 	text-align: center;
+	
+	float: right;
+	
+	/*margin-top: 20px;*/
 }
 
 #menu li {
-	display: inline-block;
+	/*display: inline-block;*/
+	line-height: 30px;
+	margin-bottom: 5px;
 }
 
 #menu a {
 	display: block;
-	padding: 15px 40px 15px 40px;
+	/*padding: 15px 40px 15px 40px;*/
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 1em;
+	/*font-size: 1em;*/
 	font-weight: 200;
-	color: #FFFFFF;
-	/*border: none;*/
+	color: #064C8A;
+	
+	padding: 10px 5px;
+	/*border: 1px solid purple;*/
+	/*border-radius: 15px;*/
+	text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+	font-size: .8em;
 }
 
 #menu a:hover, #menu .current_page_item a {
 	text-decoration: none;
 	background: #05457D;
+	color:#fff;
+	border-radius:15px;
 }
 
 #menu .current_page_item a {
 	background: #05457D;
 	color: #FFFFFF;
+	border-radius: 15px;
 }
 
 #menu .last {
@@ -265,11 +287,12 @@ a:visited:before {
 
 
 #welcome {
-	width: 1000px;
+	/*width: 1000px;*/
 	margin: 0px auto;
-	padding: 30px 0px;
+	padding: 30px 5%;
 	border-bottom: 1px solid #D4D4D4;
 	color: #000000;
+	overflow: hidden;
 }
 
 #welcome h2 {
@@ -277,8 +300,9 @@ a:visited:before {
 }
 #teammember{
 	overflow: hidden;
-	width: 1000px;
+	/*width: 1000px;*/
 	margin: 0px auto;
+	padding: 0 5%;
 }
 #teammember h2{
 	margin: 20px 0;
@@ -300,24 +324,23 @@ a:visited:before {
 }
 
 #two-columns #col1 {
-	float: right;
-	width: 700px;
 	color: #000000;
 }
 
 #two-columns #col2 {
-	float: left;
-	width: 240px;
+	display: block;
+	text-align: center;
 }
 
 #two-columns h3 {
 	padding: 0px 0px 20px 0px;
 	color: #000000;
+	text-align: center;
 }
 .image-style{
 	/*width:320px;*/
 	/*height: 260px;*/
-	width: 160px;
+	width: 120px;
 }
 .clean{
 	clear: both;
@@ -328,34 +351,15 @@ a:visited:before {
 
 footer {
 	overflow: hidden;
-	width: 1000px;
-	height: 150px;
+	/*width: 1000px;*/
+	height: 100px;
 	margin: 0 auto;
-	padding: 40px 0 15px 0;
+	padding: 30px 0 15px 0;
 }
 
 footer p {
 	margin: 0;
 	line-height: normal;
 	text-align: center;
-	font-size: .8em;
-}
-
-.entry ul{
-	line-height: 50px;
-	margin:30px 0;
-	/*border: 4px solid white;*/
-	padding: 15px;
-	/*border-radius:15px;*/
-	background-color: #DBEAF9;
-}
-
-.entry ul li{
-	background: url("images/list-icon.jpg")  left center no-repeat;
-	padding-left: 15px;
-}
-
-.entry a:hover{
-	font-style: italic;
-	text-decoration: underline;
+	font-size: .75em;
 }
