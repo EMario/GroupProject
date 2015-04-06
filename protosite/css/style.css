@@ -369,6 +369,7 @@ border-top: 1px solid #ddd;
 #comment{
 	background:lightblue;
 	margin-top:5px;
+	text-align:center;
 }
 
 #submitbutton { width:auto; 
