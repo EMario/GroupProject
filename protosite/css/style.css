@@ -6,7 +6,7 @@
 
 body{
 	background:#F9F9F9 url("../../images/main-bg.jpg") repeat; 
-
+	font-family: 'arial', 'helvetica';
 }
 
 header {
@@ -27,7 +27,7 @@ header p:first-of-type{
 	padding: 0;
 	color: #fff;
 	position:relative;
-	vertical-align:center;
+	vertical-align:middle;
 	text-transform:uppercase;
 	display:inline-block;
 }
@@ -124,7 +124,7 @@ aside{
 
 aside h3{
 	border: dotted 1px black;
-    font-family: Droid Sans;
+    font-family: 'Droid Sans';
     font-size: 14px;
     line-height: 1.6em;
     font-weight: bold;
@@ -140,7 +140,7 @@ aside h3{
 
 aside ul{
 	border: dotted 1px black;
-    font-family: Droid Sans;
+    font-family: 'Droid Sans';
     font-size: 14px;
     line-height: 1.6em;
     font-weight: bold;
