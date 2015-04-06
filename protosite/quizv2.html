@@ -12,38 +12,9 @@
 		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/pepper-grinder/jquery-ui.css" media="screen" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<nav  id="primary_nav_wrap">
-			<ul>
-				<li><p>Home</p>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="resourcesv2.html">Resources</a></li>
-						<li><a href="#">About</a></li>
-					</ul>
-				</li><!--
-				--><li><p>Lectures</p>
-					<ul>
-						<li><a href="lecturev2.html">Lecture Example</a></li>
-						<li><a href="#">Lecture 1</a></li>
-						<li><a href="#">Lecture 2</a></li>
-						<li><a href="#">Lecture 3</a></li>
-						<li><a href="#">Lecture 4</a></li>	
-					</ul>
-				</li><!--
-				--><li><p>Quizzes</p>
-					<ul>
-						<li><a href="quizv2.html">Quiz 1</a></li>
-						<li><a href="#">Quiz 2</a></li>
-						<li><a href="#">Quiz 3</a></li>
-					</ul>
-				</li>
-			</ul>				
-		</nav>
-			<header>
-				<a href="index.html"><img src="images/background_top_blue.jpg" alt="background"/></a>
-				<p>British Columbia Institute of Technology</p>
-				<p>comp 1950 | intermediate web design and development</p>
-			</header>
+				<!--#include file="nav.inc" -->
+		<!--#include file="header.inc" -->
+
 		<main>
 			<section id="article_section">
 				<span class="anchor" id="top"></span>
@@ -129,32 +100,7 @@ new semantic tags in HTML5. (2 marks)
 				</article>
 			</section>
 			</main>
-						<footer>
-				<p>Sitemap</p>
-				<ul>
-					<li><p>Article 1</p></li><!--
-					--><li><a href="index.html">Home</a></li><!--
-					--><li><a href="resourcesv2.html">Resources</a></li><!--
-					--><li><a href="#">About</a></li>
-				</ul>
-				<ul>
-					<li><p>Lectures</p></li><!--
-					--><li><a href="lecturev2.html">Lecture Example</a></li><!--
-					--><li><a href="#">Lecture 1</a></li><!--
-					--><li><a href="#">Lecture 2</a></li><!--
-					--><li><a href="#">Lecture 3</a></li><!--
-					--><li><a href="#">Lecture 4</a></li>
-				</ul>
-				<ul>
-					<li><p>Quizzes</p></li><!--
-					--><li><a href="quizv2.html">Quiz 1</a></li><!--
-					--><li><a href="#">Quiz 2</a></li><!--
-					--><li><a href="#">Quiz 3</a></li>
-				</ul>
-				<p><br />Contact: <a href="#">Jeffrey Parker</a></p>
-				<p><br /><a href="../homepage.html">Back to the homepage</a></p>
-				<p><br />Copyright @ 2015 BCITCOMP 1950<br /><br /></p>
-			</footer>
+			<!--#include file="footer.inc" -->
 		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.core.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
